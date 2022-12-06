@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lab4.xsl"?>
+<internship>
+        <resorts>
+            <licsno>001</licsno>
+            <areaocc>20</areaocc>
+            <leaseperiod>2</leaseperiod>
+            <ownername>alappa</ownername>
+        </resorts>
+        <resorts>
+            <licsno>002</licsno>
+            <areaocc>5</areaocc>
+            <leaseperiod>1</leaseperiod>
+            <ownername>neil</ownername>
+        </resorts>
+        <resorts>
+            <licsno>003</licsno>
+            <areaocc>15</areaocc>
+            <leaseperiod>4</leaseperiod>
+            <ownername>adarsh</ownername>
+        </resorts>
+        <resorts>
+            <licsno>004</licsno>
+            <areaocc>11</areaocc>
+            <leaseperiod>5</leaseperiod>
+            <ownername>adityax</ownername>
+        </resorts>
+
+    </internship>

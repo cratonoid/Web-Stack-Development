@@ -1,0 +1,7 @@
+<!ELEMENT resorts (licsno,areaocc,leaseperiod,ownername)>
+<!ELEMENT licsno (#PCDATA)>
+<!ELEMENT areaocc (#PCDATA)>
+<!ELEMENT leaseperiod (#PCDATA)>
+<!ELEMENT ownername (#PCDATA)>
+
+
