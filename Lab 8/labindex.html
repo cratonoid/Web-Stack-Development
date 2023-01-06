@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    </head>
+    <body ng-app="MyApp">
+        <p><a href="#/!"> Main</a></p>
+        <p><a href="#!nat">Nat Int</a></p>
+        <p><a href="#!int">Inte Int</a></p>
+        <div ng-view ng-controller="MyCtrl"></div>
+        <script>
+            var app=angular.module("MyApp",["ngRoute"]);
+            app.config(function($routeProvider){
+            $routeProvider
+            .when("/",{
+                templateUrl : "lab83.html"
+            })
+            .when("/nat",{
+                templateUrl : "lab81.html"
+            })
+            .when("/int",{
+                templateUrl : "lab82.html"
+            });
+            });
+            app.controller("MyCtrl",function($scope,$http){
+           $http.get("lab8.json").then(function(response){
+           $scope.mydata=response.data.records;
+           });
+        });
+        app.filter("category",function(){
+        return function(text){
+            let txt='';
+            if (text >= 80){
+                txt=text + "+(18% Tax)"
+            }
+            else {
+                txt=text + "+(12% Tax)"
+            }
+            return txt;
+        }
+            });
+        </script>
+    </body>
+</html>

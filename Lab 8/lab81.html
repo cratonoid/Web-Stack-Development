@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+       <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #e2e2e2;
+}
+.navbar{
+    background-color: #010100;
+    height:60px;
+}
+.navbar > img{
+    border-radius: 50px;
+    height: 50px;
+    width:55px;
+    padding-left: 10px;
+    padding-top:5px;
+}
+.navbar span{
+    position:relative;
+    bottom:30%;
+    left: 3%;
+    padding-left:10px;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;;
+}
+.navbar a{
+    position: relative;
+    left:40%;
+    bottom:30%;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.navbar a:visited, a:link{
+    color: #61122f;
+}
+.navbar a:hover,a:active{
+    color: red;
+}
+.menu h1{
+    color: #000000;
+    text-align: center;
+    padding-top:30px;
+    font-weight: 900;
+    font-size: 34px;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+.menu table{
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    text-align: center;
+}
+.menu th{
+    border: 2px solid #fff;
+    color:#000000;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px;
+}
+.menu table td{
+    border: 2px solid #fff;
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ 
+       </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <br><br>
+            
+    <span>IP Internship Portal</span>
+    
+        </div>
+        <div class="menu" ng-app="MyApp" ng-controller="MyCtrl">
+           <h1>National Interns </h1>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>REGION</th>
+                    <th>TIMEPERIOD(in months)</th>
+                </tr>
+                <tr ng-repeat="x in mydata">
+                    <td  ng-if="x.id=='national'">{{x.id }}</td>
+                    <td ng-if="x.id=='national'">{{x.name}}</td>
+                    <td ng-if="x.id=='national'">{{x.region}}</td>
+                    <td ng-if="x.id=='national'">{{x.timeperiod}}</td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            var app=angular.module("MyApp",[]);
+           
+            app.controller("MyCtrl",function($scope, $http) {            
+            $http.get("lab8.json").then(function(response){
+                $scope.mydata=response.data.records;
+            });
+          
+            });
+
+    
+        </script>
+    </body>
+</html>

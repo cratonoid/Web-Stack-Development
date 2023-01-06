@@ -1,0 +1,31 @@
+
+{
+   "records":
+    [
+    {
+       "id":"international","name":"Alex","region":"New York","timeperiod":10
+
+    },
+    {
+        "id":"international","name":"Max","region":"Chicago","timeperiod":9
+    },
+    {
+        "id":"international","name":"Gabriel","region":"Dubai","timeperiod":3
+    },
+    {
+        "id":"national","name":"Sam","region":"Mumbai","timeperiod":11
+    },
+    {
+         "id":"national","name":"Alan","region":"Delhi","timeperiod":10
+    },
+    {
+        "id":"international","name":"Chris","region":"London","timeperiod":2
+    },
+    {
+        "id":"international","name":"Marcus","region":"California","timeperiod":1
+    },
+    {
+        "id":"international","name":"Gary","region":"San Francisco","timeperiod":11
+    }
+]
+}
