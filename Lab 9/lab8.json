@@ -1,0 +1,44 @@
+{"records":[
+   {
+    "id":"101",
+    "name":"Gary",
+    "type":"Onsite",
+    "rating":3.4,
+    "region":"New Zealand"
+   
+    
+   },
+   {
+    "id":"102",
+    "name":"Kunal",
+    "type":"Remote",
+    "rating":4.4,
+    "region":"Arunachal Pradesh"
+   
+   },
+   {
+    "id":"103",
+    "name":"Mihir",
+    "type":"Remote",
+    "rating":3.4,
+    "region":"North Amercica"
+  
+   },
+   {
+    "id":"104",
+    "name":"Ankit",
+   "type":"Onsite",
+   "rating":4.8,
+   "region":"Rajasthan"
+
+
+   },
+   {
+    "id":"105",
+    "name":"Ankur",
+    "type":"Onsite",
+    "rating":4.0,
+    "region":"Kerela"
+  
+   }
+]}

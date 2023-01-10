@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            LAB:9
+        </title>
+        <style>
+            #container{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                border: 2px solid black;
+                padding: 20px;
+                background-color: rgb(167, 167, 144);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h3>IP INTERNSHIP PORTAL</h3>
+            <form action="/sign_up" method="post">
+                <label for="iid">Enter intern Id:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</label>
+                <input type="text" name="iid" id="iid"><br>
+                <label for="iname">Enter intern name: &nbsp;  &nbsp; &nbsp;&nbsp;</label>
+                <input type="text" id="iname" name="iname"><br>
+                <label for="itype">Enter type of intern: &nbsp;</label>
+                <input type="text" name="itype" id="itype"><br>
+                <label for="irating">Enter resume rating:&nbsp; &nbsp; &nbsp;</label>
+                <input type="text" name="irating" id="irating"><br>
+                <label for="iregion">Enter region:&nbsp; &nbsp;&nbsp; &nbsp;</label>
+                <input type="text" name="iregion" id="iregion"><br><br>
+                <input type="submit" value="Enter into the Library JSON">
+            </form>
+        </div>
+        
+    </body>
+</html>
